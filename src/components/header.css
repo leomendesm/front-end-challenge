@@ -1,2 +1,9 @@
-.main {
-  color: #FFF; }
+header {
+  background: #efefef;
+  height: 5em;
+  display: flex;
+  justify-content: space-between; }
+  header .icon {
+    width: 3em;
+    height: 3em;
+    padding: 1em; }

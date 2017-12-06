@@ -3,12 +3,15 @@
   .item a {
     text-decoration: none;
     color: #000; }
+    .item a:hover {
+      text-decoration: underline; }
   .item .product-name {
     padding: 0px 10px;
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    text-align: center; }
   .item .price {
     text-align: center;
     font-weight: 500; }
@@ -19,3 +22,11 @@
   .item img {
     width: 80%;
     margin: 10%; }
+
+@media only screen and (min-width: 768px) {
+  .item {
+    width: 33.3%; } }
+
+@media only screen and (min-width: 1024px) {
+  .item {
+    width: 25%; } }

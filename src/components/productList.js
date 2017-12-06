@@ -11,7 +11,7 @@ class App extends Component {
   }
   
   render() {
-    const products = this.list.products.map((a, index)=><ListItem info={a} key={index} />)
+    const products = this.list.products.map((a, index)=><ListItem info={a} id={index} key={index} />)
     return (
       <div className='product-list'>
         {products}

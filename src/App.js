@@ -7,12 +7,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
         <Router>
+          <div>
+          <Header />
           <Switch>
             <Route exact path='/' component={ProductList} />
             <Route path='/product/:id' component={Product} />
           </Switch>
+          </div>
         </Router>
       </div>
     );

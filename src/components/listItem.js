@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './listItem.css'
+import style from '../stylesheets/components/listItem.css'
 import { Link } from 'react-router-dom'
 
 class ListItem extends Component {
@@ -12,11 +12,11 @@ class ListItem extends Component {
     }
     render() {
         return (
-            <div className="item">
+            <div className={style.item}>
                 <Link to={'/product/'+this.props.id}>
                     <img src={this.img} alt={this.name} />
-                    <p className="product-name">{this.name}</p>
-                    <p className='price'>{this.price} <span className='promo'>{this.oldPrice}</span></p>
+                    <p className={style.productName}>{this.name}</p>
+                    <p className={style.price}>{this.price} <span className={style.promo}>{this.oldPrice}</span></p>
                 </Link>
             </div>
         )

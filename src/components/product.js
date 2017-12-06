@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import ListProducts from '../products.json'
 import Button from './button'
-import './product.css'
+import style from '../stylesheets/components/product.css'
 const Size = ({size}) => (
-    <div className="size"><p>{size}</p></div>
+    <div className={style.size}><p>{size}</p></div>
 )
 class Product extends Component {
     componentWillMount(){
@@ -15,18 +15,17 @@ class Product extends Component {
         this.oldPrice = (this.item.on_sale)? this.item.regular_price : ''
         this.sizes = this.item.sizes.filter((s)=>s.available)
         this.promo = (this.item.discount_percentage)? this.item.discount_percentage+' OFF':''
-        console.log(this.sizes)
     }
     render() {
         const sizes = this.sizes.map((s, index)=><Size size={s.size} key={index} />)
         return (
-            <div className="product">
+            <div className={style.product}>
                 <img src={this.img} alt={this.name} />
-                <div className='info'>
-                    <p className="product-name">{this.name}</p>
-                    <p className='price'>{this.price} <span className='promo'>{this.oldPrice}</span><br /><br />{this.promo}</p>
-                    <p className='size-label'>Sizes</p>
-                    <div className='sizes'>
+                <div className={style.info}>
+                    <p className={style.productName}>{this.name}</p>
+                    <p className={style.price}>{this.price} <span className={style.promo}>{this.oldPrice}</span><br /><br />{this.promo}</p>
+                    <p className={style.sizeLabel}>Sizes</p>
+                    <div className={style.sizes}>
                         {sizes}
                     </div>
                     <Button text={'Buy Now'} />

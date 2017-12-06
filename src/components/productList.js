@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ListProducts from '../products.json'
 import ListItem from './listItem'
-import './productList.css'
+import style from '../stylesheets/components/productList.css'
 class App extends Component {
   constructor(props){
     super(props)
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     const products = this.list.products.map((a, index)=><ListItem info={a} id={index} key={index} />)
     return (
-      <div className='product-list'>
+      <div className={style.productList}>
         {products}
       </div>
     );

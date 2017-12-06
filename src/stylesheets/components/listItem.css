@@ -5,7 +5,7 @@
     color: #000; }
     .item a:hover {
       text-decoration: underline; }
-  .item .product-name {
+  .item .productName {
     padding: 0px 10px;
     font-weight: 500;
     white-space: nowrap;

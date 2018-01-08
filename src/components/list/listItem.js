@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import style from '../stylesheets/components/listItem.css'
+import style from '../../stylesheets/components/listItem.css'
 import { Link } from 'react-router-dom'
 
 class ListItem extends Component {

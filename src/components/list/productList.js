@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ListProducts from '../products.json'
+import ListProducts from '../../products.json'
 import ListItem from './listItem'
-import style from '../stylesheets/components/productList.css'
+import style from '../../stylesheets/components/productList.css'
 class App extends Component {
   constructor(props){
     super(props)

@@ -35,6 +35,8 @@
     .product .sizes .size {
       border: 1px solid black;
       padding: 10px; }
+      .product .sizes .size:selected {
+        padding: 20px; }
 
 @media only screen and (min-width: 768px) {
   .product {

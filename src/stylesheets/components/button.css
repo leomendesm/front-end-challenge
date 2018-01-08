@@ -3,3 +3,6 @@
   padding: 12px 0px;
   text-align: center;
   margin: 3em; }
+
+.disabled {
+  color: #dbdbdb; }

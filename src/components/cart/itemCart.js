@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import style from '../stylesheets/components/itemCart.css'
+import style from '../../stylesheets/components/itemCart.css'
 
 class ItemCart extends Component {
     constructor(props){

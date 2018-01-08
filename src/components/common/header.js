@@ -1,6 +1,6 @@
 import React from 'react'
 
-import style from '../stylesheets/components/header.css'
+import style from '../../stylesheets/components/header.css'
 import MdShoppingCart from 'react-icons/lib/md/shopping-cart'
 import {Link} from 'react-router-dom'
 const Header = () => (
